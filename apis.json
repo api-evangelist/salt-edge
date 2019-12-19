@@ -1,0 +1,62 @@
+{
+    "name": "Salt Edge",
+    "description": "Salt Edge Inc. offers financial solutions, such as financial data aggregation, white label banking, and other valued added APIs.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28175-www-saltedge-com.jpg",
+    "tags": [
+        "banking",
+        "contacts",
+        "have api",
+        "psd2"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/salt-edge\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Salt Edge",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28175-www-saltedge-com.jpg",
+            "humanURL": "https:\/\/www.saltedge.com",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/salt-edge-openapi.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Blog",
+            "url": "https:\/\/blog.saltedge.com\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/salt-edge-inc-"
+        },
+        {
+            "type": "Email",
+            "url": "support@saltedge.com"
+        },
+        {
+            "type": "Email",
+            "url": "privacy@saltedge.com"
+        },
+        {
+            "type": "Github",
+            "url": "https:\/\/github.com\/saltedge"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/saltedge"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.saltedge.com"
+        }
+    ]
+}
