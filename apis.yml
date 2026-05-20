@@ -105,6 +105,10 @@ apis:
       - PFM enrichment
       - Lending insights
 common:
+  - type: GitHubOrganization
+    url: https://github.com/saltedge
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/salt-edge
   - type: Portal
     url: https://www.saltedge.com/
   - type: Documentation
