@@ -2,7 +2,7 @@ aid: salt-edge
 url: https://raw.githubusercontent.com/api-evangelist/salt-edge/refs/heads/main/apis.yml
 name: Salt Edge
 kind: company
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Fintech
   - Open Banking
@@ -30,7 +30,7 @@ apis:
       - AISP
       - Account Information
       - Aggregation
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://www.saltedge.com/api/v5
     humanURL: https://docs.saltedge.com/account_information/v5/
     description: REST API for retrieving end-user accounts, transactions, balances, and identity across 5,000+ banks worldwide.
@@ -51,7 +51,7 @@ apis:
       - PSD2
       - PISP
       - Payment Initiation
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://www.saltedge.com/api/v5/payments
     humanURL: https://docs.saltedge.com/payment_initiation/v5/
     description: Initiate single, recurring, and bulk SEPA / domestic payments via PSD2 PISP.
@@ -70,7 +70,7 @@ apis:
       - Compliance
       - Open Banking Compliance
       - SaaS
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://www.saltedge.com/api/partners/v1
     humanURL: https://docs.saltedge.com/compliance_solution/
     description: APIs for banks adopting open banking - exposes their data to TPPs through Salt Edge's compliance gateway.
@@ -90,7 +90,7 @@ apis:
       - Data Enrichment
       - Categorization
       - Merchant
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://www.saltedge.com/api/data_enrichment/v1
     humanURL: https://docs.saltedge.com/data_enrichment/
     description: Categorize and enrich transactions, identify merchants, and surface financial insights.
