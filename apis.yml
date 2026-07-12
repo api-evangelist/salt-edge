@@ -105,6 +105,12 @@ apis:
       - PFM enrichment
       - Lending insights
 common:
+  - type: DomainSecurity
+    url: security/salt-edge-domain-security.yml
+  - type: Authentication
+    url: authentication/salt-edge-authentication.yml
+  - url: https://blog.saltedge.com/feed
+    type: Blog
   - type: GitHubOrganization
     url: https://github.com/saltedge
   - type: LinkedIn

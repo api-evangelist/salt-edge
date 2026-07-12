@@ -1,0 +1,37 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/salt-edge-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: appId
+  type: apiKey
+  in: header
+  parameter: App-id
+  description: Salt Edge application identifier.
+  sources:
+  - openapi/salt-edge-openapi.yml
+- name: secret
+  type: apiKey
+  in: header
+  parameter: Secret
+  description: Salt Edge application secret key.
+  sources:
+  - openapi/salt-edge-openapi.yml
+- name: signature
+  type: apiKey
+  in: header
+  parameter: Signature
+  description: Base64-encoded SHA256 RSA signature (required in live mode).
+  sources:
+  - openapi/salt-edge-openapi.yml
+- name: expiresAt
+  type: apiKey
+  in: header
+  parameter: Expires-at
+  description: Unix-timestamp request expiration (required in live mode).
+  sources:
+  - openapi/salt-edge-openapi.yml
