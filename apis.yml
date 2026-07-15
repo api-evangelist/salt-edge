@@ -105,6 +105,8 @@ apis:
       - PFM enrichment
       - Lending insights
 common:
+  - type: AgenticAccess
+    url: agentic-access/salt-edge-agentic-access.yml
   - type: DomainSecurity
     url: security/salt-edge-domain-security.yml
   - type: Authentication
