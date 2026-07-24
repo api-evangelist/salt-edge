@@ -1,0 +1,153 @@
+openapi: 3.1.0
+info:
+  title: Salt Edge Account Information Accounts Connections API
+  description: 'Salt Edge Account Information API (v5) is an open banking aggregation
+
+    service exposing customers, connections (linked bank accounts), accounts,
+
+    transactions, providers (banks), consents, and account holder info. All
+
+    requests require App-id + Secret headers, and live-mode requests also
+
+    require a signed payload via Signature and Expires-at headers.
+
+    '
+  version: v5
+  contact:
+    name: Salt Edge
+    url: https://docs.saltedge.com/account_information/v5/
+servers:
+- url: https://www.saltedge.com/api/v5
+  description: Salt Edge production
+security:
+- appId: []
+  secret: []
+tags:
+- name: Connections
+paths:
+  /connections:
+    get:
+      summary: List connections
+      operationId: listConnections
+      parameters:
+      - name: customer_id
+        in: query
+        schema:
+          type: string
+      - name: from_id
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: List of connections
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+      tags:
+      - Connections
+    post:
+      summary: Create a connection
+      operationId: createConnection
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+      responses:
+        '200':
+          description: Created connection
+      tags:
+      - Connections
+  /connections/{id}:
+    get:
+      summary: Show a connection
+      operationId: showConnection
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Connection details
+      tags:
+      - Connections
+    delete:
+      summary: Remove a connection
+      operationId: removeConnection
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Connection removed
+      tags:
+      - Connections
+  /connections/{id}/reconnect:
+    put:
+      summary: Reconnect a connection with new credentials
+      operationId: reconnectConnection
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              additionalProperties: true
+      responses:
+        '200':
+          description: Reconnect accepted
+      tags:
+      - Connections
+  /connections/{id}/refresh:
+    put:
+      summary: Refresh a connection
+      operationId: refreshConnection
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Refresh accepted
+      tags:
+      - Connections
+components:
+  securitySchemes:
+    appId:
+      type: apiKey
+      in: header
+      name: App-id
+      description: Salt Edge application identifier.
+    secret:
+      type: apiKey
+      in: header
+      name: Secret
+      description: Salt Edge application secret key.
+    signature:
+      type: apiKey
+      in: header
+      name: Signature
+      description: Base64-encoded SHA256 RSA signature (required in live mode).
+    expiresAt:
+      type: apiKey
+      in: header
+      name: Expires-at
+      description: Unix-timestamp request expiration (required in live mode).

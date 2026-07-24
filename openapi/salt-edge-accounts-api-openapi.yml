@@ -1,0 +1,68 @@
+openapi: 3.1.0
+info:
+  title: Salt Edge Account Information Accounts API
+  description: 'Salt Edge Account Information API (v5) is an open banking aggregation
+
+    service exposing customers, connections (linked bank accounts), accounts,
+
+    transactions, providers (banks), consents, and account holder info. All
+
+    requests require App-id + Secret headers, and live-mode requests also
+
+    require a signed payload via Signature and Expires-at headers.
+
+    '
+  version: v5
+  contact:
+    name: Salt Edge
+    url: https://docs.saltedge.com/account_information/v5/
+servers:
+- url: https://www.saltedge.com/api/v5
+  description: Salt Edge production
+security:
+- appId: []
+  secret: []
+tags:
+- name: Accounts
+paths:
+  /accounts:
+    get:
+      summary: List accounts for a connection
+      operationId: listAccounts
+      parameters:
+      - name: connection_id
+        in: query
+        required: true
+        schema:
+          type: string
+      - name: from_id
+        in: query
+        schema:
+          type: string
+      responses:
+        '200':
+          description: List of accounts
+      tags:
+      - Accounts
+components:
+  securitySchemes:
+    appId:
+      type: apiKey
+      in: header
+      name: App-id
+      description: Salt Edge application identifier.
+    secret:
+      type: apiKey
+      in: header
+      name: Secret
+      description: Salt Edge application secret key.
+    signature:
+      type: apiKey
+      in: header
+      name: Signature
+      description: Base64-encoded SHA256 RSA signature (required in live mode).
+    expiresAt:
+      type: apiKey
+      in: header
+      name: Expires-at
+      description: Unix-timestamp request expiration (required in live mode).
