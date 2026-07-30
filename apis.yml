@@ -2,7 +2,20 @@ aid: salt-edge
 url: https://raw.githubusercontent.com/api-evangelist/salt-edge/refs/heads/main/apis.yml
 name: Salt Edge
 kind: company
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/salt-edge.png
 tags:
   - Fintech
   - Open Banking
@@ -23,87 +36,180 @@ description: >-
   Information (AIS) and Payment Initiation (PIS) services plus add-on Data Enrichment and AML
   endpoints under a single REST surface.
 apis:
-  - aid: salt-edge:account-information-api
-    name: Salt Edge Account Information API
-    tags:
-      - PSD2
-      - AISP
-      - Account Information
-      - Aggregation
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://www.saltedge.com/api/v5
-    humanURL: https://docs.saltedge.com/account_information/v5/
-    description: REST API for retrieving end-user accounts, transactions, balances, and identity across 5,000+ banks worldwide.
-    properties:
-      - type: Documentation
-        url: https://docs.saltedge.com/account_information/v5/
-    x-features:
-      - 5,000+ banks across EU, UK, US, APAC, LATAM
-      - Accounts, transactions, balances, holder identity
-      - PSD2 AISP-licensed
-    x-use-cases:
-      - PFM and budgeting
-      - Lending decisioning
-      - KYC enrichment
-  - aid: salt-edge:payment-initiation-api
-    name: Salt Edge Payment Initiation API
-    tags:
-      - PSD2
-      - PISP
-      - Payment Initiation
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://www.saltedge.com/api/v5/payments
-    humanURL: https://docs.saltedge.com/payment_initiation/v5/
-    description: Initiate single, recurring, and bulk SEPA / domestic payments via PSD2 PISP.
-    properties:
-      - type: Documentation
-        url: https://docs.saltedge.com/payment_initiation/v5/
-    x-features:
-      - Single, recurring, bulk payments
-      - PSD2 PISP-licensed
-    x-use-cases:
-      - Pay-by-bank checkout
-      - Payouts
-  - aid: salt-edge:partners-api
-    name: Salt Edge Partners (Compliance Solution) API
-    tags:
-      - Compliance
-      - Open Banking Compliance
-      - SaaS
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://www.saltedge.com/api/partners/v1
-    humanURL: https://docs.saltedge.com/compliance_solution/
-    description: APIs for banks adopting open banking - exposes their data to TPPs through Salt Edge's compliance gateway.
-    properties:
-      - type: Documentation
-        url: https://docs.saltedge.com/compliance_solution/
-    x-features:
-      - Open Banking compliance gateway
-      - TPP verification
-      - Mobile SCA
-    x-use-cases:
-      - Bank-side PSD2 compliance
-      - Open Banking enablement
-  - aid: salt-edge:data-enrichment-api
-    name: Salt Edge Data Enrichment API
-    tags:
-      - Data Enrichment
-      - Categorization
-      - Merchant
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://www.saltedge.com/api/data_enrichment/v1
-    humanURL: https://docs.saltedge.com/data_enrichment/
-    description: Categorize and enrich transactions, identify merchants, and surface financial insights.
-    properties:
-      - type: Documentation
-        url: https://docs.saltedge.com/data_enrichment/
-    x-features:
-      - Transaction categorization
-      - Merchant identification
-      - Financial insights
-    x-use-cases:
-      - PFM enrichment
-      - Lending insights
+- aid: salt-edge:account-information-api
+  name: Salt Edge Account Information API
+  tags:
+  - PSD2
+  - AISP
+  - Account Information
+  - Aggregation
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://www.saltedge.com/api/v5
+  humanURL: https://docs.saltedge.com/account_information/v5/
+  description: >-
+    REST API for retrieving end-user accounts, transactions, balances, and identity across 5,000+ banks
+    worldwide.
+  properties:
+  - type: Documentation
+    url: https://docs.saltedge.com/account_information/v5/
+  x-features:
+  - 5,000+ banks across EU, UK, US, APAC, LATAM
+  - Accounts, transactions, balances, holder identity
+  - PSD2 AISP-licensed
+  x-use-cases:
+  - PFM and budgeting
+  - Lending decisioning
+  - KYC enrichment
+- aid: salt-edge:payment-initiation-api
+  name: Salt Edge Payment Initiation API
+  tags:
+  - PSD2
+  - PISP
+  - Payment Initiation
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://www.saltedge.com/api/v5/payments
+  humanURL: https://docs.saltedge.com/payment_initiation/v5/
+  description: Initiate single, recurring, and bulk SEPA / domestic payments via PSD2 PISP.
+  properties:
+  - type: Documentation
+    url: https://docs.saltedge.com/payment_initiation/v5/
+  x-features:
+  - Single, recurring, bulk payments
+  - PSD2 PISP-licensed
+  x-use-cases:
+  - Pay-by-bank checkout
+  - Payouts
+- aid: salt-edge:partners-api
+  name: Salt Edge Partners (Compliance Solution) API
+  tags:
+  - Compliance
+  - Open Banking Compliance
+  - SaaS
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://www.saltedge.com/api/partners/v1
+  humanURL: https://docs.saltedge.com/compliance_solution/
+  description: >-
+    APIs for banks adopting open banking - exposes their data to TPPs through Salt Edge's compliance gateway.
+  properties:
+  - type: Documentation
+    url: https://docs.saltedge.com/compliance_solution/
+  x-features:
+  - Open Banking compliance gateway
+  - TPP verification
+  - Mobile SCA
+  x-use-cases:
+  - Bank-side PSD2 compliance
+  - Open Banking enablement
+- aid: salt-edge:data-enrichment-api
+  name: Salt Edge Data Enrichment API
+  tags:
+  - Data Enrichment
+  - Categorization
+  - Merchant
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://www.saltedge.com/api/data_enrichment/v1
+  humanURL: https://docs.saltedge.com/data_enrichment/
+  description: Categorize and enrich transactions, identify merchants, and surface financial insights.
+  properties:
+  - type: Documentation
+    url: https://docs.saltedge.com/data_enrichment/
+  x-features:
+  - Transaction categorization
+  - Merchant identification
+  - Financial insights
+  x-use-cases:
+  - PFM enrichment
+  - Lending insights
+- aid: salt-edge:salt-edge-accounts-api
+  name: Salt Edge Accounts API
+  description: The Accounts API from Salt Edge — 1 operation(s) for accounts.
+  humanURL: https://docs.saltedge.com/account_information/v5/
+  baseURL: https://www.saltedge.com/api/v5
+  tags:
+  - Accounts
+  properties:
+  - type: OpenAPI
+    url: openapi/salt-edge-accounts-api-openapi.yml
+- aid: salt-edge:salt-edge-connect-sessions-api
+  name: Salt Edge Connect Sessions API
+  description: The Connect Sessions API from Salt Edge — 1 operation(s) for connect sessions.
+  humanURL: https://docs.saltedge.com/account_information/v5/
+  baseURL: https://www.saltedge.com/api/v5
+  tags:
+  - Connect Sessions
+  properties:
+  - type: OpenAPI
+    url: openapi/salt-edge-connect-sessions-api-openapi.yml
+- aid: salt-edge:salt-edge-connections-api
+  name: Salt Edge Connections API
+  description: The Connections API from Salt Edge — 4 operation(s) for connections.
+  humanURL: https://docs.saltedge.com/account_information/v5/
+  baseURL: https://www.saltedge.com/api/v5
+  tags:
+  - Connections
+  properties:
+  - type: OpenAPI
+    url: openapi/salt-edge-connections-api-openapi.yml
+- aid: salt-edge:salt-edge-consents-api
+  name: Salt Edge Consents API
+  description: The Consents API from Salt Edge — 2 operation(s) for consents.
+  humanURL: https://docs.saltedge.com/account_information/v5/
+  baseURL: https://www.saltedge.com/api/v5
+  tags:
+  - Consents
+  properties:
+  - type: OpenAPI
+    url: openapi/salt-edge-consents-api-openapi.yml
+- aid: salt-edge:salt-edge-countries-api
+  name: Salt Edge Countries API
+  description: The Countries API from Salt Edge — 1 operation(s) for countries.
+  humanURL: https://docs.saltedge.com/account_information/v5/
+  baseURL: https://www.saltedge.com/api/v5
+  tags:
+  - Countries
+  properties:
+  - type: OpenAPI
+    url: openapi/salt-edge-countries-api-openapi.yml
+- aid: salt-edge:salt-edge-customers-api
+  name: Salt Edge Customers API
+  description: The Customers API from Salt Edge — 2 operation(s) for customers.
+  humanURL: https://docs.saltedge.com/account_information/v5/
+  baseURL: https://www.saltedge.com/api/v5
+  tags:
+  - Customers
+  properties:
+  - type: OpenAPI
+    url: openapi/salt-edge-customers-api-openapi.yml
+- aid: salt-edge:salt-edge-holder-info-api
+  name: Salt Edge Holder Info API
+  description: The Holder Info API from Salt Edge — 1 operation(s) for holder info.
+  humanURL: https://docs.saltedge.com/account_information/v5/
+  baseURL: https://www.saltedge.com/api/v5
+  tags:
+  - Holder Info
+  properties:
+  - type: OpenAPI
+    url: openapi/salt-edge-holder-info-api-openapi.yml
+- aid: salt-edge:salt-edge-providers-api
+  name: Salt Edge Providers API
+  description: The Providers API from Salt Edge — 2 operation(s) for providers.
+  humanURL: https://docs.saltedge.com/account_information/v5/
+  baseURL: https://www.saltedge.com/api/v5
+  tags:
+  - Providers
+  properties:
+  - type: OpenAPI
+    url: openapi/salt-edge-providers-api-openapi.yml
+- aid: salt-edge:salt-edge-transactions-api
+  name: Salt Edge Transactions API
+  description: The Transactions API from Salt Edge — 1 operation(s) for transactions.
+  humanURL: https://docs.saltedge.com/account_information/v5/
+  baseURL: https://www.saltedge.com/api/v5
+  tags:
+  - Transactions
+  properties:
+  - type: OpenAPI
+    url: openapi/salt-edge-transactions-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/salt-edge-agentic-access.yml
