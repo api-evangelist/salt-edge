@@ -1,0 +1,30 @@
+{
+  "provider": "salt-edge",
+  "sources": [
+    "salt-edge-accounts-api-openapi.yml",
+    "salt-edge-connect-sessions-api-openapi.yml",
+    "salt-edge-connections-api-openapi.yml",
+    "salt-edge-consents-api-openapi.yml",
+    "salt-edge-countries-api-openapi.yml",
+    "salt-edge-customers-api-openapi.yml",
+    "salt-edge-holder-info-api-openapi.yml",
+    "salt-edge-providers-api-openapi.yml",
+    "salt-edge-transactions-api-openapi.yml"
+  ],
+  "outputs": [
+    "salt-edge-accounts-api-openapi.yml",
+    "salt-edge-connect-sessions-api-openapi.yml",
+    "salt-edge-connections-api-openapi.yml",
+    "salt-edge-consents-api-openapi.yml",
+    "salt-edge-countries-api-openapi.yml",
+    "salt-edge-customers-api-openapi.yml",
+    "salt-edge-holder-info-api-openapi.yml",
+    "salt-edge-providers-api-openapi.yml",
+    "salt-edge-transactions-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
