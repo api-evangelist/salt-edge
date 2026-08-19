@@ -1,0 +1,140 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Salt Edge Account Information Accounts Connections API",
+    "version": "v5"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "App-id",
+      "value": "{{App-id}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Connections",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List connections",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.saltedge.com/api/v5/connections",
+            "params": [
+              {
+                "name": "customer_id",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "from_id",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List connections"
+        },
+        {
+          "info": {
+            "name": "Create a connection",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://www.saltedge.com/api/v5/connections",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Create a connection"
+        },
+        {
+          "info": {
+            "name": "Show a connection",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.saltedge.com/api/v5/connections/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Show a connection"
+        },
+        {
+          "info": {
+            "name": "Remove a connection",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://www.saltedge.com/api/v5/connections/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Remove a connection"
+        },
+        {
+          "info": {
+            "name": "Reconnect a connection with new credentials",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://www.saltedge.com/api/v5/connections/:id/reconnect",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ],
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Reconnect a connection with new credentials"
+        },
+        {
+          "info": {
+            "name": "Refresh a connection",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://www.saltedge.com/api/v5/connections/:id/refresh",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Refresh a connection"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

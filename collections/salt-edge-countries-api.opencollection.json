@@ -1,0 +1,44 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Salt Edge Account Information Accounts Countries API",
+    "version": "v5"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "App-id",
+      "value": "{{App-id}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Countries",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List supported countries",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.saltedge.com/api/v5/countries",
+            "params": [
+              {
+                "name": "include_fake_providers",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List supported countries"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,72 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Salt Edge Account Information Accounts Providers API",
+    "version": "v5"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "App-id",
+      "value": "{{App-id}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Providers",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List providers",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.saltedge.com/api/v5/providers",
+            "params": [
+              {
+                "name": "country_code",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "include_fake_providers",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "from_id",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List providers"
+        },
+        {
+          "info": {
+            "name": "Show provider details",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.saltedge.com/api/v5/providers/:id",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Show provider details"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,67 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Salt Edge Account Information Accounts Consents API",
+    "version": "v5"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "App-id",
+      "value": "{{App-id}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Consents",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "List consents",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.saltedge.com/api/v5/consents",
+            "params": [
+              {
+                "name": "customer_id",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "connection_id",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "List consents"
+        },
+        {
+          "info": {
+            "name": "Revoke a consent",
+            "type": "http"
+          },
+          "http": {
+            "method": "PUT",
+            "url": "https://www.saltedge.com/api/v5/consents/:id/revoke",
+            "params": [
+              {
+                "name": "id",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Revoke a consent"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
