@@ -28,7 +28,7 @@ tags:
   - AML
 created: '2026-05-08'
 modified: '2026-05-08'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 description: >-
   Salt Edge is a global open-banking aggregator providing account information, payment
   initiation, data enrichment, merchant identification, AML transaction monitoring, and
