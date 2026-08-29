@@ -231,6 +231,9 @@ apis:
   - type: OpenAPI
     url: openapi/salt-edge-transactions-api-openapi.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/salt-edge-capability-edges.yml
+    name: Salt Edge Business Capability Map
   - type: AgenticAccess
     url: agentic-access/salt-edge-agentic-access.yml
   - type: DomainSecurity
