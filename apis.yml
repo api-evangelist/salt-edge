@@ -232,6 +232,8 @@ apis:
   - type: OpenAPI
     url: openapi/salt-edge-transactions-api-openapi.yml
 common:
+  - type: Website
+    url: https://www.saltedge.com/
   - type: CapabilityMap
     url: capabilities/salt-edge-capability-edges.yml
     name: Salt Edge Business Capability Map
