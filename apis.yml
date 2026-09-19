@@ -122,6 +122,10 @@ apis:
   tags:
   - Data Enrichment
   - Categorization
+  - Merchants
+  tags_raw:
+  - Data Enrichment
+  - Categorization
   - Merchant
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   baseURL: https://www.saltedge.com/api/data_enrichment/v1
