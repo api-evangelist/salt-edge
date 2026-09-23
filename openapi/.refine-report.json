@@ -1,15 +1,7 @@
 {
   "provider": "salt-edge",
   "sources": [
-    "salt-edge-accounts-api-openapi.yml",
-    "salt-edge-connect-sessions-api-openapi.yml",
-    "salt-edge-connections-api-openapi.yml",
-    "salt-edge-consents-api-openapi.yml",
-    "salt-edge-countries-api-openapi.yml",
-    "salt-edge-customers-api-openapi.yml",
-    "salt-edge-holder-info-api-openapi.yml",
-    "salt-edge-providers-api-openapi.yml",
-    "salt-edge-transactions-api-openapi.yml"
+    "_original/salt-edge-openapi.yml"
   ],
   "outputs": [
     "salt-edge-accounts-api-openapi.yml",
@@ -25,6 +17,47 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "salt-edge-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "salt-edge-openapi.yml: tagged paths GET /customers -> Customers",
+    "salt-edge-openapi.yml: tagged paths POST /customers -> Customers",
+    "salt-edge-openapi.yml: tagged paths DELETE /customers/{id} -> Customers",
+    "salt-edge-openapi.yml: tagged paths POST /connect_sessions/create -> Connect Sessions",
+    "salt-edge-openapi.yml: tagged paths GET /connections -> Connections",
+    "salt-edge-openapi.yml: tagged paths POST /connections -> Connections",
+    "salt-edge-openapi.yml: tagged paths GET /connections/{id} -> Connections",
+    "salt-edge-openapi.yml: tagged paths DELETE /connections/{id} -> Connections",
+    "salt-edge-openapi.yml: tagged paths PUT /connections/{id}/reconnect -> Connections",
+    "salt-edge-openapi.yml: tagged paths PUT /connections/{id}/refresh -> Connections",
+    "salt-edge-openapi.yml: tagged paths GET /accounts -> Accounts",
+    "salt-edge-openapi.yml: tagged paths GET /transactions -> Transactions",
+    "salt-edge-openapi.yml: tagged paths GET /providers -> Providers",
+    "salt-edge-openapi.yml: tagged paths GET /providers/{id} -> Providers",
+    "salt-edge-openapi.yml: tagged paths GET /countries -> Countries",
+    "salt-edge-openapi.yml: tagged paths GET /consents -> Consents",
+    "salt-edge-openapi.yml: tagged paths PUT /consents/{id}/revoke -> Consents",
+    "salt-edge-openapi.yml: tagged paths GET /holder_info -> Holder Info",
+    "salt-edge-openapi.yml: declared missing tag: Accounts",
+    "salt-edge-openapi.yml: declared missing tag: Connect Sessions",
+    "salt-edge-openapi.yml: declared missing tag: Connections",
+    "salt-edge-openapi.yml: declared missing tag: Consents",
+    "salt-edge-openapi.yml: declared missing tag: Countries",
+    "salt-edge-openapi.yml: declared missing tag: Customers",
+    "salt-edge-openapi.yml: declared missing tag: Holder Info",
+    "salt-edge-openapi.yml: declared missing tag: Providers",
+    "salt-edge-openapi.yml: declared missing tag: Transactions",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "salt-edge-accounts-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "salt-edge-connect-sessions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "salt-edge-connections-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "salt-edge-consents-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "salt-edge-countries-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "salt-edge-customers-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "salt-edge-holder-info-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "salt-edge-providers-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "salt-edge-transactions-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
