@@ -94,6 +94,16 @@ paths:
       - Customers
 components:
   schemas:
+    CustomerList:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Customer'
+        meta:
+          type: object
+          additionalProperties: true
     Customer:
       type: object
       properties:
@@ -113,16 +123,6 @@ components:
         updated_at:
           type: string
           format: date-time
-    CustomerList:
-      type: object
-      properties:
-        data:
-          type: array
-          items:
-            $ref: '#/components/schemas/Customer'
-        meta:
-          type: object
-          additionalProperties: true
     CustomerResponse:
       type: object
       properties:
