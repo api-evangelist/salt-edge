@@ -104,6 +104,11 @@ components:
         meta:
           type: object
           additionalProperties: true
+    CustomerResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/Customer'
     Customer:
       type: object
       properties:
@@ -123,11 +128,6 @@ components:
         updated_at:
           type: string
           format: date-time
-    CustomerResponse:
-      type: object
-      properties:
-        data:
-          $ref: '#/components/schemas/Customer'
   securitySchemes:
     appId:
       type: apiKey
