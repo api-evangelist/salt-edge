@@ -94,6 +94,11 @@ paths:
       - Customers
 components:
   schemas:
+    CustomerResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/Customer'
     CustomerList:
       type: object
       properties:
@@ -104,11 +109,6 @@ components:
         meta:
           type: object
           additionalProperties: true
-    CustomerResponse:
-      type: object
-      properties:
-        data:
-          $ref: '#/components/schemas/Customer'
     Customer:
       type: object
       properties:
