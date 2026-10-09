@@ -96,3 +96,46 @@ plans:
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - metered
+  - subscription
+  units:
+  - negotiated
+  - period
+  - transaction
+  plans:
+  - name: Sandbox / Developer
+    access: trial
+    model: subscription
+    model_how: derived
+    units:
+    - period
+    periods:
+    - month
+  - name: Account Information (Production)
+    access: enterprise
+    model: subscription
+    model_how: derived
+    units:
+    - negotiated
+    periods:
+    - term
+  - name: Payment Initiation (Production)
+    access: enterprise
+    model: metered
+    model_how: derived
+    units:
+    - transaction
+    periods:
+    - per-use
+  - name: Compliance Solution
+    access: enterprise
+    model: subscription
+    model_how: derived
+    units:
+    - negotiated
+    periods:
+    - term
