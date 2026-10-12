@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/salt-edge/integrations
+- https://n8n.io/integrations/salt-edge/
+- https://composio.dev/toolkits/salt-edge
+- https://monid.ai/tools/salt-edge
+checked:
+- https://composio.dev/toolkits/salt-edge
+- https://monid.ai/tools/salt-edge
+- https://n8n.io/integrations/salt-edge/
+- https://zapier.com/apps/salt-edge/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
