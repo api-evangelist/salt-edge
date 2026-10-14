@@ -9,6 +9,7 @@ checked:
 - https://composio.dev/toolkits/salt-edge
 - https://monid.ai/tools/salt-edge
 - https://n8n.io/integrations/salt-edge/
+- https://registry.financialdataexchange.org/
 - https://www.openbanking.org.uk/regulated-providers/salt-edge/
 - https://zapier.com/apps/salt-edge/integrations
 summary: null
@@ -31,4 +32,28 @@ edges:
     api_families: null
     detected_by: sweep-standard-registers.py
     detected: '2026-10-12'
+- partner_name: FDX (Financial Data Exchange)
+  partner: fdx
+  type: contract
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://registry.financialdataexchange.org/
+  contract_reference:
+    register: FDX Registry
+    standard: FDX API
+    spec_file: null
+    register_api: https://registry.financialdataexchange.org/fdxregistryapi/organizations/search/listingTags
+    role: data-recipient
+    member_type: MEMBER
+    registered_name: Salt Edge
+    register_id: 442
+    registered_website: https://www.saltedge.com/
+    country: Canada
+    fdx_version: null
+    matched_by: domain:saltedge.com
+    detected_by: sweep-fdx.py
+    detected: '2026-10-14'
+  detected_by: sweep-fdx.py
+  first_seen: '2026-10-14'
 templates: []
