@@ -94,21 +94,6 @@ paths:
       - Customers
 components:
   schemas:
-    CustomerResponse:
-      type: object
-      properties:
-        data:
-          $ref: '#/components/schemas/Customer'
-    CustomerList:
-      type: object
-      properties:
-        data:
-          type: array
-          items:
-            $ref: '#/components/schemas/Customer'
-        meta:
-          type: object
-          additionalProperties: true
     Customer:
       type: object
       properties:
@@ -128,6 +113,21 @@ components:
         updated_at:
           type: string
           format: date-time
+    CustomerResponse:
+      type: object
+      properties:
+        data:
+          $ref: '#/components/schemas/Customer'
+    CustomerList:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/Customer'
+        meta:
+          type: object
+          additionalProperties: true
   securitySchemes:
     appId:
       type: apiKey
