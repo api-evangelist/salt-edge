@@ -1,4 +1,4 @@
-# Salt Edge (salt-edge)
+# Salt Edge
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,116 +66,137 @@
 
 Salt Edge is a global open-banking aggregator providing account information, payment initiation, data enrichment, merchant identification, AML transaction monitoring, and open-banking compliance solutions across 5,000+ banks. The Salt Edge API exposes Account Information (AIS) and Payment Initiation (PIS) services plus add-on Data Enrichment and AML endpoints under a single REST surface.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/salt-edge/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/salt-edge/refs/heads/main/apis.yml)
+**Areas:** Fintech · Open Banking · PSD2 · Aggregator · Global · AISP · PISP · Compliance · AML · Data Aggregation
 
-## Tags
+## Salt Edge on APIs.io
 
-- Fintech
-- Open Banking
-- PSD2
-- Aggregator
-- Global
-- AISP
-- PISP
-- Compliance
-- AML
+Everything profiled for Salt Edge is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/salt-edge/](https://apis.io/providers/salt-edge/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### APIs (13)
 
-- **Created:** 2026-05-08
-- **Modified:** 2026-05-08
+- [Salt Edge Account Information API](https://apis.io/apis/salt-edge/account-information-api/) — REST API for retrieving end-user accounts, transactions, balances, and identity across 5,000+ banks worldwide.
+- [Salt Edge Payment Initiation API](https://apis.io/apis/salt-edge/payment-initiation-api/) — Initiate single, recurring, and bulk SEPA / domestic payments via PSD2 PISP.
+- [Salt Edge Partners (Compliance Solution) API](https://apis.io/apis/salt-edge/partners-api/) — APIs for banks adopting open banking - exposes their data to TPPs through Salt Edge's compliance gateway.
+- [Salt Edge Data Enrichment API](https://apis.io/apis/salt-edge/data-enrichment-api/) — Categorize and enrich transactions, identify merchants, and surface financial insights.
+- [Salt Edge Accounts API](https://apis.io/apis/salt-edge/salt-edge-accounts-api/) — The Accounts API from Salt Edge — 1 operation(s) for accounts.
+- [Salt Edge Connect Sessions API](https://apis.io/apis/salt-edge/salt-edge-connect-sessions-api/) — The Connect Sessions API from Salt Edge — 1 operation(s) for connect sessions.
+- [Salt Edge Connections API](https://apis.io/apis/salt-edge/salt-edge-connections-api/) — The Connections API from Salt Edge — 4 operation(s) for connections.
+- [Salt Edge Consents API](https://apis.io/apis/salt-edge/salt-edge-consents-api/) — The Consents API from Salt Edge — 2 operation(s) for consents.
+- [Salt Edge Countries API](https://apis.io/apis/salt-edge/salt-edge-countries-api/) — The Countries API from Salt Edge — 1 operation(s) for countries.
+- [Salt Edge Customers API](https://apis.io/apis/salt-edge/salt-edge-customers-api/) — The Customers API from Salt Edge — 2 operation(s) for customers.
+- [Salt Edge Holder Info API](https://apis.io/apis/salt-edge/salt-edge-holder-info-api/) — The Holder Info API from Salt Edge — 1 operation(s) for holder info.
+- [Salt Edge Providers API](https://apis.io/apis/salt-edge/salt-edge-providers-api/) — The Providers API from Salt Edge — 2 operation(s) for providers.
+- [Salt Edge Transactions API](https://apis.io/apis/salt-edge/salt-edge-transactions-api/) — The Transactions API from Salt Edge — 1 operation(s) for transactions.
 
-## APIs
+### Published properties
 
-### Salt Edge Account Information API
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-REST API for retrieving end-user accounts, transactions, balances, and identity across 5,000+ banks worldwide.
+#### Agentic access (1)
 
-- **Human URL:** [https://docs.saltedge.com/account_information/v5/](https://docs.saltedge.com/account_information/v5/)
-- **Base URL:** `https://www.saltedge.com/api/v5`
+Which operations an agent can call, which act, and which need a human in the loop.
 
-#### Tags
+- [Salt Edge Agentic Access](https://apis.io/agentic-access/salt-edge/salt-edge-agentic-access/)
 
-- PSD2
-- AISP
-- Account Information
-- Aggregation
+#### Collections (10)
 
-#### Properties
+Postman and Open Collection request collections.
 
-- [Documentation](https://docs.saltedge.com/account_information/v5/)
-- [Postman Collection](collections/salt-edge.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/salt-edge.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Salt Edge Account Information API](https://apis.io/collections/salt-edge/open-salt-edge/)
+- [Salt Edge Account Information Accounts API](https://apis.io/collections/salt-edge/open-salt-edge-accounts-api/)
+- [Salt Edge Account Information Accounts Connect Sessions API](https://apis.io/collections/salt-edge/open-salt-edge-connect-sessions-api/)
+- [Salt Edge Account Information Accounts Connections API](https://apis.io/collections/salt-edge/open-salt-edge-connections-api/)
+- [Salt Edge Account Information Accounts Consents API](https://apis.io/collections/salt-edge/open-salt-edge-consents-api/)
+- [Salt Edge Account Information Accounts Countries API](https://apis.io/collections/salt-edge/open-salt-edge-countries-api/)
+- [Salt Edge Account Information Accounts Customers API](https://apis.io/collections/salt-edge/open-salt-edge-customers-api/)
+- [Salt Edge Account Information Accounts Holder Info API](https://apis.io/collections/salt-edge/open-salt-edge-holder-info-api/)
+- [Salt Edge Account Information Accounts Providers API](https://apis.io/collections/salt-edge/open-salt-edge-providers-api/)
+- [Salt Edge Account Information Accounts Transactions API](https://apis.io/collections/salt-edge/open-salt-edge-transactions-api/)
 
-### Salt Edge Payment Initiation API
+#### Security (2)
 
-Initiate single, recurring, and bulk SEPA / domestic payments via PSD2 PISP.
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Human URL:** [https://docs.saltedge.com/payment_initiation/v5/](https://docs.saltedge.com/payment_initiation/v5/)
-- **Base URL:** `https://www.saltedge.com/api/v5/payments`
+- [Salt Edge Authentication](https://apis.io/security/salt-edge/salt-edge-authentication/)
+- [Salt Edge Domain Security](https://apis.io/security/salt-edge/salt-edge-domain-security/)
 
-#### Tags
+#### Plans and pricing (1)
 
-- PSD2
-- PISP
-- Payment Initiation
+Published plans, tiers and prices.
 
-#### Properties
+- [Salt Edge Plans Pricing](https://apis.io/plans/salt-edge/salt-edge-plans-pricing/)
 
-- [Documentation](https://docs.saltedge.com/payment_initiation/v5/)
-- [Postman Collection](collections/salt-edge.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/salt-edge.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+#### Rate limits (1)
 
-### Salt Edge Partners (Compliance Solution) API
+Published request limits.
 
-APIs for banks adopting open banking - exposes their data to TPPs through Salt Edge's compliance gateway.
+- [Salt Edge Rate Limits](https://apis.io/rate-limits/salt-edge/salt-edge-rate-limits/)
 
-- **Human URL:** [https://docs.saltedge.com/compliance_solution/](https://docs.saltedge.com/compliance_solution/)
-- **Base URL:** `https://www.saltedge.com/api/partners/v1`
+#### FinOps (1)
 
-#### Tags
+What the API costs to run, by operation.
 
-- Compliance
-- Open Banking Compliance
-- SaaS
+- [Salt Edge Finops](https://apis.io/finops/salt-edge/salt-edge-finops/)
 
-#### Properties
+## Where to find this API
 
-- [Documentation](https://docs.saltedge.com/compliance_solution/)
-- [Postman Collection](collections/salt-edge.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/salt-edge.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-### Salt Edge Data Enrichment API
-
-Categorize and enrich transactions, identify merchants, and surface financial insights.
-
-- **Human URL:** [https://docs.saltedge.com/data_enrichment/](https://docs.saltedge.com/data_enrichment/)
-- **Base URL:** `https://www.saltedge.com/api/data_enrichment/v1`
-
-#### Tags
-
-- Data Enrichment
-- Categorization
-- Merchant
-
-#### Properties
-
-- [Documentation](https://docs.saltedge.com/data_enrichment/)
-- [Postman Collection](collections/salt-edge.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/salt-edge.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [GitHub Organization](https://github.com/saltedge)
-- [LinkedIn](https://www.linkedin.com/company/salt-edge)
-- [Portal](https://www.saltedge.com/)
+- [Website](https://www.saltedge.com/)
 - [Documentation](https://docs.saltedge.com/)
 - [Pricing](https://www.saltedge.com/pricing)
-- [Plans](plans/salt-edge-plans-pricing.yml)
-- [Rate Limits](rate-limits/salt-edge-rate-limits.yml)
-- [Fin Ops](finops/salt-edge-finops.yml)
+- [Blog](https://blog.saltedge.com/feed)
+- [GitHub](https://github.com/saltedge)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 25.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 45.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 7.9 |
+
+**Agent readiness 17.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.4** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/salt-edge/](https://apis.io/providers/salt-edge/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Salt Edge: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/salt-edge/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
